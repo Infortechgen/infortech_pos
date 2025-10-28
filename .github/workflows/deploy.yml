@@ -17,6 +17,9 @@ jobs:
         with:
           flutter-version: "stable"
 
+      - name: Install dependencies
+        run: flutter pub get
+
       - name: Build Web
         run: flutter build web --release
 
